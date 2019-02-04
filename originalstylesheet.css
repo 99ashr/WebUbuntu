@@ -15,11 +15,14 @@ body{
 	text-decoration: none;
 	font-style: italic;
 	text-align: left;
-	//background-image: url("gdm_lock.jpg");
+	background-image: url("backgrounds/604414-large-ubuntu-dark-wallpaper-2560x1600-mac.jpg");
 	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	text-indent: 20px;
 }
 h1{
+	margin-top: 100px;
 	border: 1px dotted #CB0000;
 	border-radius: 10px;
 		-moz-border-radius: 10px;
@@ -44,7 +47,7 @@ h3{
 
 }
 ul{
-
+	margin-left: 10%;
 	//border: 1px outset #F70025;
 	border-radius: 10px;
 		-moz-border-radius: 10px;
@@ -56,8 +59,30 @@ ul{
 	//overflow: scroll;
 	
 }
+.main .terminal {
+	//border: 1px outset #F70025;
+	border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+	padding: 50px;
+	color: #ED5752;
+	//min-height: 20px;
+	//max-height: 150px;
+	//overflow: scroll;
+	//float: right;
+	margin-left: 30%;
+}
+div #headder{
+	margin-top: 0px;
+}
 
-.main .category li{
+#headder ul{
+	margin-top: 0px;
+	float: right;
+	list-style-type: none;
+}
+
+li{
 	border: 1px outset #F70025;
 	border-radius: 10px;
 		-moz-border-radius: 10px;
@@ -69,7 +94,6 @@ ul{
 	padding: 2px;
 	margin: 3px;
 }
-
 a:link {
 	color: black;
 	text-decoration: none;
