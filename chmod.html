@@ -1,0 +1,36 @@
+<html>
+<head>
+<title> Change permissions</title>
+</head>
+
+
+<body>
+<h1> Changing Permissions </h1>
+<br/>
+<h2> Please give the absolute path of the file or directoy you want to work on, separated by '/'</h2><br/>
+<h2> if you enter only the name of file or directory,it will only work if the concerned document is in current directory you're working on</h2>
+<form method="POST" action="/cgi-bin/LinuxCGI/chmod.cgi">
+Change Permission for:
+<input type="radio" name="who" value="u">Owner of File
+<input type="radio" name="who" value="g">Group of File
+<input type="radio" name="who" value="o">Other users
+<br/>
+Add or remove permission?
+<input type="radio" name="what" value="add">Add
+<input type="radio" name="what" value="remove">Remove
+<br/>
+Which Permission?
+<input type="radio" name="which" value="r">Read
+<input type="radio" name="which" value="w">Write
+<input type="radio" name="which" value="r">Execute
+<br/>
+What file?
+<input type="text" name="file" placeholder="Enter file name or path">
+
+<input type="submit" value="change">
+</form>
+</body>
+
+</html>
+
+
