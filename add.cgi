@@ -11,12 +11,9 @@ print  ""
 # gettting  html data 
 mypage_data=cgi.FieldStorage()
 
-f_num=mypage_data.getvalue('x')
-s_num=mypage_data.getvalue('y')
 mycmd=mypage_data.getvalue('c')
-#  adding numbers 
-print  int(f_num)    +       int(s_num)
+ 
 print   "<br/>"
 print   "<pre>"
-print   commands.getoutput('sudo  '+mycmd)
+print   commands.getoutput(mycmd)
 print   "</pre>"
