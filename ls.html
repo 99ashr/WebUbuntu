@@ -10,8 +10,8 @@
 		<h1 class="heading">Present Working Directory</h1>
 	</div>
 	<div class="cmd">
-		<form action="/cgi-bin/pwd.cgi" method="POST" class="cmd">
-			<input type="submit" value="PWD  ">
+		<form action="/cgi-bin/ls.cgi" method="POST" class="cmd">
+			<input type="submit" value="ls  ">
 		</form>
 		<button type="button" onclick="loadDoc()">Change Content</button>
 	</div>
@@ -25,7 +25,7 @@
       this.responseText;
     }
   };
-  xhttp.open("GET", "/cgi-bin/pwd.cgi", true);
+  xhttp.open("GET", "/cgi-bin/ls.cgi", true);
   xhttp.send();
 }</script>
 

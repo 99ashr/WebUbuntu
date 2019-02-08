@@ -1,0 +1,27 @@
+<html>
+<head>
+<title> Change Directory</title>
+</head>
+
+
+<body>
+<div name="page">
+<h1> Change Directory </h1>
+<br/>
+<h2> Please give the absolute path of the directoy you want to move to, separated by '/'</h2><br/>
+<h2> If you enter only the name of the directory, you will move to the directory if one such directory exists inside the current directory</h2>
+<br/> <h2> Enter '..' if you want to open the directory containing your current directory</h2>
+<form method="POST" action="/cgi-bin/LinuxCGI/cd.cgi">
+
+Move to Directory:<input type="text" name="directory" placeholder="Enter directory name and path">
+
+<input type="submit" value="change">
+</form>
+</div>
+<div name="foot">
+<a href="home.html"> Back to Home Page</a><br/>
+</div>
+</body>
+
+</html>
+
