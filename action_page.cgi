@@ -13,12 +13,9 @@ print ("<body><h1>")
 
 # gettting  html data 
 mypage_data=cgi.FieldStorage()
-cmd=mypage_data.getvalue('loc')
+FirstName=mypage_data.getvalue('FirstName')
+LastName=mypage_data.getvalue('LastName')
 
-print "<pre>"
-print   commands.getoutput("cd "+ cmd)
-current_dir=commands.getoutput("pwd")
-print "<pre>"
-print "You're now in "+current_dir+" Directory"
+print FirstName+" "+ LastName
 print 
 print ("</h1></body></html>")

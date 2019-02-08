@@ -10,13 +10,13 @@
 		<h1 class="heading">Present Working Directory</h1>
 	</div>
 	<div class="cmd">
-		<form action="/cgi-bin/pwd.cgi" method="POST" class="cmd">
+		<form action="/cgi-bin/pwd.cgi" method="POST" class="cmd" target="votar">
 			<input type="submit" value="PWD  ">
 		</form>
 		<button type="button" onclick="loadDoc()">Change Content</button>
 	</div>
 
-<script>function loadDoc() {
+<script type="text/javascript">function loadDoc() {
 	//var cmd =document.getElementById("xxx").value;
 	  var xhttp = new XMLHttpRequest();
 	  xhttp.onreadystatechange = function() {

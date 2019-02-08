@@ -12,7 +12,7 @@ mypage_data=cgi.FieldStorage()
 dir=mypage_data.getvalue('directory')
 print "<pre>"
 print commands.getoutput('cd '+dir)
-
+print commands.getoutput("pwd")
 print "</pre>"
 print "\n \n"
 
