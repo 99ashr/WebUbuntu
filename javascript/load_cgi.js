@@ -1,3 +1,4 @@
-document.write("script is working!!!")
+document.write("Let's Go!!!")
 
-var chng_h1=document.getElementsByTagName('h1');
+var h1=document.getElementById("h1").value
+document.write(h1);

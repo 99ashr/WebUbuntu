@@ -6,11 +6,24 @@
 </head>
 <body>
 	<script src="load_cgi.js"></script>
-	<script>
-	
-	</script>
 
-	<h1 id="h1">Checking Ajax</h1>
+
+<p id="intro">Hello World!</p>
+<p>This example demonstrates the <b>getElementsById</b> method.</p>
+
+<p id="demo"></p>
+<p id="dom"></p>
+
+<script>
+var myElement = document.getElementById("intro").innerHTML;
+document.getElementById("demo").innerHTML = 
+"The text from the intro paragraph is " + myElement;
+
+document.getElementById("h1").innerHTML="Hello !!!"
+</script>
+
+
+	<h1 id="h1"></h1>
 	<br>
 	<hr>
 	<br>
@@ -18,9 +31,14 @@
 		<h1 id="data">Sending data</h1>
 	</div>
 	<br>
+	<button onclick="document.getElementById('div2').innerHTML = Date()">The time is?</button>
+
+<button onclick="this.innerHTML =new Date().toDateString();">The time is?</button>
 	<hr>
 	<br>
 	<div id="div2"></div>
+
+
 
 	
 </body>
