@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+<<<<<<< HEAD
 	<title>PWD(Present Working Directory)</title>
 	<link rel="stylesheet" href="pwd.css">
 </head>
@@ -36,5 +37,28 @@
 	<div id="get_data"></div>
 
 	
+=======
+	<title>Document</title>
+</head>
+<body>
+<h1>loading ajax</h1>
+		
+		<script type="text/javascript">function loadDoc() {
+			//var cmd =document.getElementById("xxx").value;
+			  var xhttp = new XMLHttpRequest();
+			  xhttp.onreadystatechange = function() {
+		    if (this.readyState == 4 && this.status == 200) {
+		      document.getElementById("get_data").innerHTML =
+		      this.responseText;
+		    }
+		  };
+		  xhttp.open("GET", "/cgi-bin/pwd.cgi", true);
+		  xhttp.send();
+		}</script>
+
+		<button type="button" onclick="loadDoc();"> Load Ajax </button>
+	<div class="get_data"></div>
+
+>>>>>>> a5f9c7252786dbe19ba305072a643f5c8e897ab9
 </body>
 </html>

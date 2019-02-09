@@ -1,0 +1,104 @@
+/*@import url("originalstylesheet.css");*/
+body{
+	font-family: ChunkFiveRegular, Georgia, serif;
+	font-size: 130%;
+	padding: 10px;
+	border: 3px double #34675C;
+	border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+	background-color: #003B46;
+	//color: #E4EA8C;
+	text-decoration: none;
+	font-style: italic;
+	text-align: left;
+	background-image: url("604414-large-ubuntu-dark-wallpaper-2560x1600-mac.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-indent: 20px;
+}
+h1{
+	margin-top: 100px;
+	border: 1px dotted #CB0000;
+	border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+	color: #FB6542;
+	padding: 10px;
+	//opacity: 0.5;
+	//font-weight: bold;
+	font-style: italic;
+	text-align: center;
+}
+
+.headder ul{
+	margin-top: 0px;
+	float: right;
+	list-style-type: none;
+}
+
+li{
+	border: 1px outset #F70025;
+	border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+	display: inline-block;
+	margin-top: 0px;
+}
+div{
+	margin-top: 0px;
+}
+input {
+	font-size: 80%;
+	color: firebrick;
+	background-color: #191919;
+	margin-top: 0px;
+	border: 1px outset #F70025;
+	border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+	background-repeat: no-repeat;
+	display: inline;
+}
+input:focus {
+	background-color: #ffffff;
+	border: 1px solid #b1e1e4;
+}
+input#email {
+	background-image: url("images/email.png");
+}
+input#twitter {
+	background-image: url("images/twitter.png");
+}
+input#web {
+	background-image: url("images/web.png");
+}
+input#submit {
+	color: #444444;
+	text-shadow: 0px 1px 1px #ffffff;
+	border-bottom: 2px solid #b2b2b2;
+	background-color: #b9e4e3;
+	background: -webkit-gradient(linear, left top,
+			 left bottom, from(#beeae9), to(#a8cfce));
+	background:
+			 -moz-linear-gradient(top, #beeae9, #a8cfce);
+	background:
+			 -o-linear-gradient(top, #beeae9, #a8cfce);
+	background:
+			 -ms-linear-gradient(top, #beeae9, #a8cfce);
+}
+input#submit:hover {
+	color: #333333;
+	border: 1px solid #a4a4a4;
+	border-top: 2px solid #b2b2b2;
+	background-color: #a0dbc4;
+	background: -webkit-gradient(linear, left top,
+			 left bottom, from(#a8cfce), to(#beeae9));
+	background:
+			 -moz-linear-gradient(top, #a8cfce, #beeae9);
+	background:
+			 -o-linear-gradient(top, #a8cfce, #beeae9);
+	background:
+			 -ms-linear-gradient(top, #a8cfce, #beeae9);
+}
