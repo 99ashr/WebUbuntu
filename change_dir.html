@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="change_dir.css">
 </head>
 <body>
-	<iframe src="" frameborder="0" style="display: none;" name="frame"></iframe>
+	<iframe src="" frameborder="3px" width=96.7% name="frame"></iframe>
 	<div class="header">
 		<h1 class="heading">Change your directory</h1>
 	</div>
@@ -15,20 +15,23 @@
 			<pre><h4><input type="text" placeholder="Enter the location where you want to go" name="loc"></h4></pre> <br>
 			<input type="submit" value="Change Directory">
 		</form>
-		<script>function loadDoc() {
-	//var cmd =document.getElementById("xxx").value;
-	  var xhttp = new XMLHttpRequest();
-	  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("get_data").innerHTML =
-      this.responseText;
-    }
-  };
-  xhttp.open("GET", "/cgi-bin/change_dir.cgi", true);
-  xhttp.send();
-}</script>
+	<script>
+		
+		function loadajax() {
+			var ajax=new XMLHttpRequest();
+			ajax.onreadystatechange=function () {
+				if(this.readyState==4 && this.status==200){
+					document.getElementById("get_data").innerHTML=this.responseText;
+				}
 
-		<!--<button type="button"> change directory </button>-->
+			};
+			ajax.open("GET", "text.txt",true);
+			ajax.send();
+		}
+
+	</script>
+
+		<button type="button" onclick="loadajax();"> Load Ajax </button>
 	</div>
 	<div class="get_data"></div>
 	
