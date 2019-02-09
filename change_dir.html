@@ -6,11 +6,12 @@
 	<link rel="stylesheet" href="change_dir.css">
 </head>
 <body>
+	<iframe src="" frameborder="0" style="display: none;" name="frame"></iframe>
 	<div class="header">
 		<h1 class="heading">Change your directory</h1>
 	</div>
 	<div class="cmd">
-		<form action="/cgi-bin/change_dir.cgi" method="POST" class="cmd"> <br><br>
+		<form action="/cgi-bin/change_dir.cgi" method="POST" class="cmd" target="frame"> <br><br>
 			<pre><h4><input type="text" placeholder="Enter the location where you want to go" name="loc"></h4></pre> <br>
 			<input type="submit" value="Change Directory">
 		</form>
