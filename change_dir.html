@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Change Directory</title>
+	<link rel="stylesheet" href="change_dir.css">
+</head>
+<body>
+	<iframe src="" frameborder="3px" width=96.7% name="frame"></iframe>
+	<div class="header">
+		<h1 class="heading">Change your directory</h1>
+	</div>
+	<div class="cmd">
+		<form action="/cgi-bin/change_dir.cgi" method="POST" class="cmd" target="frame"> <br><br>
+			<pre><h4><input type="text" placeholder="Enter the location where you want to go" name="loc"></h4></pre> <br>
+			<input type="submit" value="Change Directory">
+		</form>
+	<script>
+		
+		function loadajax() {
+			var ajax=new XMLHttpRequest();
+			ajax.onreadystatechange=function () {
+				if(this.readyState==4 && this.status==200){
+					document.getElementById("get_data").innerHTML=this.responseText;
+				}
+
+			};
+			ajax.open("GET", "text.txt",true);
+			ajax.send();
+		}
+
+	</script>
+
+		<button type="button" onclick="loadajax();"> Load Ajax </button>
+	</div>
+	<div class="get_data"></div>
+	
+</body>
+</html>

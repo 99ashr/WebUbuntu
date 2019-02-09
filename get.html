@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<body>
+		
+	<iframe src="" name="votar"  frameborder="1px" height="30%" width="100%"></iframe>
+
+	<br><hr><br>
+
+
+	<script>
+	
+		document.write("This script is working?");
+
+
+		
+			//function declaration
+
+			function test() {
+				//var=document.getElementById("get_data").value
+				//var data = document.write("This scripting function is working?");
+				//document.getElementById("get_data").value= data;
+				var p_tag=document.createElement("p");
+				p_tag.innerHTML= "This is p_tag";
+
+				//document.getElementById("get_data").innerHTML="We are in div tag";
+				document.getElementById("get_data").appendChild(p_tag);
+
+			}
+
+		//function calling
+
+		//test();
+			/*function inn() {
+				// body...
+				var data=document.getElementByName("votar").value;
+				document.getElementById("get_data").innerHTML=data;
+			}*/
+
+			function div_tag() {
+				document.getElementById("get_data").innerHTML="div tag"
+			}
+
+	</script>
+	<br><br><hr><br>
+
+
+	<form action="/cgi-bin/action_page.cgi" method="post" id="myform" target="votar">
+		First name: <input type="text" name="FirstName" value="Mickey"><br>
+		Last name: <input type="text" name="LastName" value="Mouse"><br>
+		<input type="submit" value="Submit">
+	</form>
+
+	<br>
+	<hr>
+	<br>
+
+
+	<p>Click the "Submit" button and the form-data will be sent to a page on the server called "/action_page.php".</p>
+	
+	<br>
+	<hr>
+	<br>
+
+	<button type="button" onclick=" test();" onmouseover="div_tag();">alert</button>
+	<br>
+	<br>
+	<hr>
+
+	<div id="get_data"></div>
+
+</body>
+</html>

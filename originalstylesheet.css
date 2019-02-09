@@ -15,11 +15,14 @@ body{
 	text-decoration: none;
 	font-style: italic;
 	text-align: left;
-	//background-image: url("gdm_lock.jpg");
+	background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("backgrounds/604372-free-ubuntu-dark-wallpaper-2832x2124-xiaomi.jpg");
 	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	text-indent: 20px;
 }
 h1{
+	margin-top: 100px;
 	border: 1px dotted #CB0000;
 	border-radius: 10px;
 		-moz-border-radius: 10px;
@@ -32,7 +35,7 @@ h1{
 	text-align: center;
 }
 h3{
-	color: #F62A00;
+	color: #AF2438;
 	border: 1px inset #F25C00;
 	border-radius: 10px;
 		-moz-border-radius: 10px;
@@ -40,11 +43,11 @@ h3{
 	padding: 10px;
 	text-align: center;
 	//visibility: hidden;
-
-
+	text-decoration-color: #191919;
+	text-decoration-style: initial;
 }
 ul{
-
+	margin-left: 10%;
 	//border: 1px outset #F70025;
 	border-radius: 10px;
 		-moz-border-radius: 10px;
@@ -56,8 +59,30 @@ ul{
 	//overflow: scroll;
 	
 }
+.main .terminal {
+	//border: 1px outset #F70025;
+	border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+	padding: 50px;
+	color: #ED5752;
+	//min-height: 20px;
+	//max-height: 150px;
+	//overflow: scroll;
+	//float: right;
+	margin-left: 30%;
+}
+div #headder{
+	margin-top: 0px;
+}
 
-.main .category li{
+#headder ul{
+	margin-top: 0px;
+	float: right;
+	list-style-type: none;
+}
+
+li{
 	border: 1px outset #F70025;
 	border-radius: 10px;
 		-moz-border-radius: 10px;
@@ -69,7 +94,6 @@ ul{
 	padding: 2px;
 	margin: 3px;
 }
-
 a:link {
 	color: black;
 	text-decoration: none;
@@ -85,13 +109,16 @@ a:active {
 	color: darkcyan;
 }
 
-/*input {
+input {
 	padding: 6px 12px 6px 12px;
-	border: 1px solid #665544;
-	color: #ffffff;
+	border: 3px solid #665544;
+	color: #191919;
+	width: 440px;
 }
 input.submit:hover {
 	background-color: #665544;
+	align-self: center;
+	margin-left: 45%;
 }
 input.submit:active {
 	background-color: chocolate;
@@ -101,8 +128,8 @@ input.text {
 }
 input.text:focus {
 	color: #665544;
-}*/
-input {
+}
+/*input {
 	font-size: 120%;
 	color: #5a5854;
 	background-color: #f2f2f2;
@@ -154,7 +181,7 @@ input#submit:hover {
 			 -o-linear-gradient(top, #a8cfce, #beeae9);
 	background:
 			 -ms-linear-gradient(top, #a8cfce, #beeae9);
-}
+}*/
 blockquote {
 	 float: right;
 	 width: 275px;
