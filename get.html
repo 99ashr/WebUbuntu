@@ -2,7 +2,7 @@
 <html>
 <body>
 		
-	<iframe src="" name="votar" frameborder="3px"></iframe>
+	<iframe src="" name="votar"  frameborder="1px" height="30%" width="100%"></iframe>
 
 	<br><hr><br>
 
@@ -11,18 +11,35 @@
 	
 		document.write("This script is working?");
 
+
+		
 			//function declaration
 
 			function test() {
 				//var=document.getElementById("get_data").value
-				data=document.write("This scripting function is working?");
-				document.getElementById("get_data").innerHTML = data;
+				//var data = document.write("This scripting function is working?");
+				//document.getElementById("get_data").value= data;
+				var p_tag=document.createElement("p");
+				p_tag.innerHTML= "This is p_tag";
+
+				//document.getElementById("get_data").innerHTML="We are in div tag";
+				document.getElementById("get_data").appendChild(p_tag);
+
 			}
 
-			//function calling
+		//function calling
 
-			//test();
-	
+		//test();
+			/*function inn() {
+				// body...
+				var data=document.getElementByName("votar").value;
+				document.getElementById("get_data").innerHTML=data;
+			}*/
+
+			function div_tag() {
+				document.getElementById("get_data").innerHTML="div tag"
+			}
+
 	</script>
 	<br><br><hr><br>
 
@@ -44,7 +61,7 @@
 	<hr>
 	<br>
 
-	<button onclick="test()">alert</button>
+	<button type="button" onclick=" test();" onmouseover="div_tag();">alert</button>
 	<br>
 	<br>
 	<hr>
